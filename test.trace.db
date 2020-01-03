@@ -1,0 +1,158 @@
+2019-12-29 19:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE AUTOR (
+       ID_AUTOR BIGINT NOT NULL AUTO_INCREMENT,
+        CPF_AUTOR VARCHAR(255),
+        NOME_AUTOR VARCHAR(255),
+        PRIMARY KEY (ID_AUTOR)
+    ) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+
+    create table autor (
+       id_autor bigint not null auto_increment,
+        cpf_autor varchar(255),
+        nome_autor varchar(255),
+        primary key (id_autor)
+    ) engine=InnoDB [42001-200]
+2019-12-29 19:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE CLIENTE (
+       ID_CLIENTE BIGINT NOT NULL AUTO_INCREMENT,
+        CPF_CLIENTE VARCHAR(255),
+        EMAIL_CLIENTE VARCHAR(255),
+        NOME_CLIENTE VARCHAR(255),
+        TELEFONE_CLIENTE VARCHAR(255),
+        PRIMARY KEY (ID_CLIENTE)
+    ) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+
+    create table cliente (
+       id_cliente bigint not null auto_increment,
+        cpf_cliente varchar(255),
+        email_cliente varchar(255),
+        nome_cliente varchar(255),
+        telefone_cliente varchar(255),
+        primary key (id_cliente)
+    ) engine=InnoDB [42001-200]
+2019-12-29 19:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE LIVRO (
+       ID_LIVRO BIGINT NOT NULL AUTO_INCREMENT,
+        GENERO VARCHAR(255),
+        NOME_AUTOR TINYBLOB,
+        NOME_EDITORA VARCHAR(255),
+        PRECO_LIVRO DOUBLE PRECISION,
+        QTD_ESTOQUE INTEGER,
+        TITULO_LIVRO VARCHAR(255),
+        PRIMARY KEY (ID_LIVRO)
+    ) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+
+    create table livro (
+       id_livro bigint not null auto_increment,
+        genero varchar(255),
+        nome_autor tinyblob,
+        nome_editora varchar(255),
+        preco_livro double precision,
+        qtd_estoque integer,
+        titulo_livro varchar(255),
+        primary key (id_livro)
+    ) engine=InnoDB [42001-200]
+2019-12-29 19:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE VENDA (
+       ID_VENDA BIGINT NOT NULL AUTO_INCREMENT,
+        DT_VENDA DATETIME(6),
+        NOME_CLIENTE TINYBLOB,
+        TITULO_LIVRO TINYBLOB,
+        VALOR_VENDA DOUBLE PRECISION,
+        PRIMARY KEY (ID_VENDA)
+    ) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+
+    create table venda (
+       id_venda bigint not null auto_increment,
+        dt_venda datetime(6),
+        nome_cliente tinyblob,
+        titulo_livro tinyblob,
+        valor_venda double precision,
+        primary key (id_venda)
+    ) engine=InnoDB [42001-200]
+2019-12-29 19:58:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LIVRO" not found; SQL statement:
+/* select generatedAlias0 from Livro as generatedAlias0 */ select livro0_.id_livro as id_livro1_2_, livro0_.genero as genero2_2_, livro0_.nome_autor as nome_aut3_2_, livro0_.nome_editora as nome_edi4_2_, livro0_.preco_livro as preco_li5_2_, livro0_.qtd_estoque as qtd_esto6_2_, livro0_.titulo_livro as titulo_l7_2_ from livro livro0_ [42102-200]
+2019-12-29 20:00:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE AUTOR (
+       ID_AUTOR BIGINT NOT NULL AUTO_INCREMENT,
+        CPF_AUTOR VARCHAR(255),
+        NOME_AUTOR VARCHAR(255),
+        PRIMARY KEY (ID_AUTOR)
+    ) ENGINE=[*]MYISAM"; expected "identifier"; SQL statement:
+
+    create table autor (
+       id_autor bigint not null auto_increment,
+        cpf_autor varchar(255),
+        nome_autor varchar(255),
+        primary key (id_autor)
+    ) engine=MyISAM [42001-200]
+2019-12-29 20:00:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE CLIENTE (
+       ID_CLIENTE BIGINT NOT NULL AUTO_INCREMENT,
+        CPF_CLIENTE VARCHAR(255),
+        EMAIL_CLIENTE VARCHAR(255),
+        NOME_CLIENTE VARCHAR(255),
+        TELEFONE_CLIENTE VARCHAR(255),
+        PRIMARY KEY (ID_CLIENTE)
+    ) ENGINE=[*]MYISAM"; expected "identifier"; SQL statement:
+
+    create table cliente (
+       id_cliente bigint not null auto_increment,
+        cpf_cliente varchar(255),
+        email_cliente varchar(255),
+        nome_cliente varchar(255),
+        telefone_cliente varchar(255),
+        primary key (id_cliente)
+    ) engine=MyISAM [42001-200]
+2019-12-29 20:00:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE LIVRO (
+       ID_LIVRO BIGINT NOT NULL AUTO_INCREMENT,
+        GENERO VARCHAR(255),
+        NOME_AUTOR TINYBLOB,
+        NOME_EDITORA VARCHAR(255),
+        PRECO_LIVRO DOUBLE PRECISION,
+        QTD_ESTOQUE INTEGER,
+        TITULO_LIVRO VARCHAR(255),
+        PRIMARY KEY (ID_LIVRO)
+    ) ENGINE=[*]MYISAM"; expected "identifier"; SQL statement:
+
+    create table livro (
+       id_livro bigint not null auto_increment,
+        genero varchar(255),
+        nome_autor tinyblob,
+        nome_editora varchar(255),
+        preco_livro double precision,
+        qtd_estoque integer,
+        titulo_livro varchar(255),
+        primary key (id_livro)
+    ) engine=MyISAM [42001-200]
+2019-12-29 20:00:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+    CREATE TABLE VENDA (
+       ID_VENDA BIGINT NOT NULL AUTO_INCREMENT,
+        DT_VENDA DATETIME,
+        NOME_CLIENTE TINYBLOB,
+        TITULO_LIVRO TINYBLOB,
+        VALOR_VENDA DOUBLE PRECISION,
+        PRIMARY KEY (ID_VENDA)
+    ) ENGINE=[*]MYISAM"; expected "identifier"; SQL statement:
+
+    create table venda (
+       id_venda bigint not null auto_increment,
+        dt_venda datetime,
+        nome_cliente tinyblob,
+        titulo_livro tinyblob,
+        valor_venda double precision,
+        primary key (id_venda)
+    ) engine=MyISAM [42001-200]
+2019-12-29 20:00:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LIVRO" not found; SQL statement:
+/* select generatedAlias0 from Livro as generatedAlias0 */ select livro0_.id_livro as id_livro1_2_, livro0_.genero as genero2_2_, livro0_.nome_autor as nome_aut3_2_, livro0_.nome_editora as nome_edi4_2_, livro0_.preco_livro as preco_li5_2_, livro0_.qtd_estoque as qtd_esto6_2_, livro0_.titulo_livro as titulo_l7_2_ from livro livro0_ [42102-200]
